@@ -52,10 +52,6 @@ sync:
 # Debug mode (prints additional information to console)
 debug: false
 
-# Messages
-messages:
-  prefix: "&8[&6VaultSync&8] &7"
-  balance-updated: "&aYour balance has been updated from another server."
 
 ```
 # Support
