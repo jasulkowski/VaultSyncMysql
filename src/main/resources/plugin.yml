@@ -1,0 +1,7 @@
+name: VaultSyncMySQL
+version: 1.0
+main: com.kynnu.vaultsync.VaultSyncPlugin
+api-version: '1.21'
+depend: [Vault]
+description: Simple MySQL synchronization for Vault economy player data
+author: Kynnuu
