@@ -35,22 +35,31 @@
 
 # Database settings
 database:
-  host: "localhost"
+  host: localhost
   port: 3306
-  database: "minecraft"
-  username: "root"
-  password: "password"
-  table: "player_balances"
+  name: minecraft
+  username: root
+  password: password
+  table: player_money
 
 # Synchronization settings
-sync:
-  # How often to check for updates (in seconds)
-  interval: 5
-  # How often to save all player data (in seconds)
-  save-interval: 300
+# Choose synchronization method:
+# - "time" - synchronize at regular intervals
+# - "events" - synchronize on player join/quit events
+sync-method: "time"
 
-# Debug mode (prints additional information to console)
-debug: false
+# Synchronization interval in minutes (only used if sync-method is "time")
+sync-interval-minutes: 10
+
+# Force full synchronization of all players (online and offline) on plugin start
+force-full-sync: false
+
+# Immediately sync new players when they join for the first time
+sync-new-players-immediately: true
+
+# Enable debug mode (more verbose logging)
+debug-mode: false
+
 
 
 ```
